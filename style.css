@@ -1,6 +1,8 @@
 body{
     padding: 0;
     margin: 0;
+    font-family:"SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 }
 #menu{
     max-width: 1450px;
@@ -82,4 +84,36 @@ div{
 .signup-btn:hover{
     color: white;
     background-color: #5E3DEE;
+}
+
+/* description css */
+.marketing, .cards{
+max-width: 1000px;
+margin: auto;
+border: 1px solid;
+}
+.marketing h2{
+    font-size: 2rem;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.marketing-card img{
+width:80%;
+}
+.marketing-card{
+    border: 1px solid;
+}
+.marketing-card div{
+    text-align:center;
+}
+.title-text{
+font-size: 1.2 rem;
+font-weight:bold;
 }
