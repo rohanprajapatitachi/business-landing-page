@@ -124,7 +124,7 @@ margin-bottom: 10px;
 }
 
 /* Pricing CSS */
-#pricing{
+#pricing, #testimonials{
     max-width:1000px;
     margin: 100px auto;
 }
