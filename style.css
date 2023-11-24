@@ -183,4 +183,17 @@ margin-bottom: 10px;
 }
 
 /* Testimonial Section*/
-
+#testimonials{
+    display: flex;
+}
+.profile-image img{
+    border-radius: 50%;
+    max-width: 300px;
+}
+.feedback{
+    color: #666;
+    font-style: italic;
+    padding: 10px;
+    line-height: 1.5rem;
+    margin-left: 20px;
+}
