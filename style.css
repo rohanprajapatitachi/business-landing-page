@@ -91,7 +91,7 @@ div{
 max-width: 1450px;
 margin: auto;
 }
-.marketing h2{
+.marketing h2, .price-title h2{
     font-size: 2.3rem;
     text-align: center;
     max-width: 600px;
@@ -124,3 +124,63 @@ margin-bottom: 10px;
 }
 
 /* Pricing CSS */
+#pricing{
+    max-width:1000px;
+    margin: 100px auto;
+}
+.price-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.price-card{
+    max-width: 30%;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 19px;
+
+}
+.price-info{
+    text-align: center;
+}
+.plan{
+    color: #5E3DEE;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+.price{
+    color: #444;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.trial{
+    color: #777;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.features{
+    line-height: 1.8rem;
+    padding-left: 10px;
+    color: #666;
+}
+.action{
+    text-align: center;
+}
+.action button{
+    border: 2px solid #5E3DEE;
+    background-color: #5E3DEE;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.action button:hover{
+    background-color: white;
+    color: #5E3DEE;
+    font-size: 1rem;
+}
+
+/* Testimonial Section*/
+
