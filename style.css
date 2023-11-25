@@ -207,5 +207,6 @@ margin-bottom: 10px;
 
 /* Subscribe Section */
 #subscribe{
-    
+    background-color: #eee;
+    border-radius: 20px;
 }
