@@ -186,6 +186,8 @@ margin-bottom: 10px;
 #testimonials{
     display: flex;
     padding: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .profile-image img{
     border-radius: 50%;
@@ -207,8 +209,11 @@ margin-bottom: 10px;
 
 /* Subscribe Section */
 #subscribe{
-    background-color: #eee;
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgb(229, 237, 249);
     border-radius: 20px;
+    padding: 150px 0;
 }
 .form{
     max-width: 600px;
@@ -217,10 +222,35 @@ margin-bottom: 10px;
 }
 .email{
     width: 100%;
-    line-height: 2rem;
+    line-height: 3rem;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 5px 10px;
 }
 .agree{
     color: #666;
     padding: 10px;
+    padding-bottom: 30px;
     text-align: left;
+    font-size: 0.8rem;
+    margin:  auto;
+}
+.subscribe{
+    width: 103%;
+    margin: 0;
+}
+.subs-title h2{
+    font-size: 2rem;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+/* Footer Section */
+#footer{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
