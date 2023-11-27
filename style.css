@@ -161,6 +161,7 @@ margin-bottom: 10px;
     line-height: 1.8rem;
     padding-left: 10px;
     color: #666;
+    list-style: none;
 }
 .action{
     text-align: center;
@@ -258,7 +259,7 @@ margin-bottom: 10px;
 .footer-section{
     width: 400px;
     line-height: 1.5rem;
-    padding: 20px;
+    padding: 10px;
 }
 .footer-section h3{
     font-size: 1.5rem;
