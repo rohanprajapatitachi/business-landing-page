@@ -515,7 +515,8 @@ margin-bottom: 10px;
         border-radius: 50%;
         max-width: 170px;
         margin: auto;
-        padding:  0 110px;
+        justify-content: center;
+        padding:  0 100px;
 
     }
     .profile-image img:hover{
