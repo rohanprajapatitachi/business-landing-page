@@ -1266,9 +1266,316 @@ margin-bottom: 10px;
     /* CSS styles for large devices */
   }
   
-  /* Extra Large devices (large desktops, 1200px and up) */
+  /* Extra Large devices (large desktops, 1200px and up) Extra Large devices (large desktops, 1200px and up) Extra Large devices (large desktops, 1200px and up) Extra Large devices (large desktops, 1200px and up) Extra Large devices (large desktops, 1200px and up) Extra Large devices (large desktops, 1200px and up) Extra Large devices (large desktops, 1200px and up) Extra Large devices (large desktops, 1200px and up) Extra Large devices (large desktops, 1200px and up)*/
   @media (min-width: 1200px) {
-    /* CSS styles for extra large devices */
-  }
+    #menu{
+        max-width: 1450px;
+        padding: 10px 10px;
+        margin: auto;
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: #5E3DEE;
+        font-family:"SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    div{
+        padding: 5px;
+       /* border: 1px solid grey;*/
+    }
+    .menu-item{
+        color:#ffffffcc;
+        font-weight:lighter;
+        padding: 10px 15px;
+    }
+    .menu-item:hover{
+        color:white;
+    }
+    .container{
+        background-color: #5E3DEE;
+        cursor: pointer;
+    }
+    .round-btn{
+        border-radius: 20px;
+        border: 2px solid white;
+        padding: 10px 40px;
+        margin: 0 10px;
+    }
+    .round-btn:hover{
+        background-color: white;
+        color: #5E3DEE;
+    }
+    #logo{
+        font-size: 1.5rem;
+        color: white;
+        font-weight: bold;
+        margin-right: auto;
+    }
+    /*Home CSS*/
+    #home{
+        display: flex;
+        max-width: 1200px;
+        padding-top: 40px;
+        margin: auto;
+        color: white;
+        font-family:"SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    .title-graphics img{
+        max-width: 700px;
+        border-radius: 4%;
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .title h1{
+        font-size: 3.5rem;
+        margin: 0;
+    }
+    .title p{
+        font-size: 1.2em;
+        padding: 8px 0;
+    }
+    .signup-btn{
+        border-radius: 30px;
+        border: 2px solid white;
+        font-size: 1.1rem;
+        padding: 10px 40px;
+        margin: 0 10px;
+        background-color: white;
+        color:#5E3DEE;
+    }
+    .signup-btn:hover{
+        color: white;
+        background-color: #5E3DEE;
+    }
+    
+    /* description css */
+    .marketing, .cards{
+    max-width: 1450px;
+    margin: auto;
+    }
+    .marketing h2, .price-title h2{
+        font-size: 2.3rem;
+        text-align: center;
+        max-width: 600px;
+        margin: 10px auto;
+        margin-bottom: 50px;
+    }
+    .cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .marketing-card img{
+    max-width:100%;
+    margin-bottom: 20px;
+    }
+    .marketing-card{
+        max-width: 100%;
+    }
+    .marketing-card div{
+        text-align:center;
+        line-height: 1.3rem;
+    }
+    .title-text{
+    font-size: 1.5em;
+    font-weight:bold;
+    margin-bottom: 10px;
+    }
+    .soft{
+        color: #666666;
+    }
+    
+    /* Pricing CSS */
+    #pricing, #testimonials{
+        max-width:1000px;
+        margin: 100px auto;
+    }
+    
+    .price-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .price-card{
+        max-width: 30%;
+        padding: 40px;
+        border: 1px solid #ccc;
+        border-radius: 19px;
+    }
+    
+    
+    .price-card:hover{
+        transform: scale(1.1);
+        background-color: #f5f5f5;
+    }
+    
+    .price-info{
+        text-align: center;
+    }
+    .plan{
+        color: #5E3DEE;
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 1.2em;
+    }
+    .price{
+        color: #444;
+        font-weight: bold;
+        font-size: 3rem;
+    }
+    .trial{
+        color: #777;
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .features{
+        line-height: 1.8rem;
+        padding-left: 10px;
+        color: #666;
+        list-style: none;
+    }
+    .action{
+        text-align: center;
+    }
+    .action button{
+        border: 2px solid #5E3DEE;
+        background-color: #5E3DEE;
+        color: white;
+        font-size: 0.9rem;
+        font-weight: lighter;
+        cursor: pointer;
+        padding: 10px 20px;
+    }
+    .action button:hover{
+        background-color: white;
+        color: #5E3DEE;
+        font-size: 1rem;
+    }
+    
+    /* Testimonial Section*/
+    #testimonials{
+        display: flex;
+        padding: 60px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .profile-image img{
+        border-radius: 50%;
+        max-width: 170px;
+    }
+    .profile-image img:hover{
+       transform: scale(1.3);
+    }
+    .feedback{
+        margin-left: 30px;
+    }
+    .feedback p{
+        color: #666;
+        font-style: lighter;
+        line-height: 1.5rem;
+    }
+    .feedback p.name{
+        color: #000;
+        font-style: normal;
+        font-weight: bold;
+    }
+    
+    /* Subscribe Section */
+    #subscribe{
+        max-width: 1000px;
+        margin: auto;
+        margin-bottom: 30px;
+        background-color: rgb(229, 237, 249);
+        border-radius: 20px;
+        padding: 150px 0;
+    }
+    .form{
+        max-width: 600px;
+        text-align: center;
+        margin: auto;
+    }
+    .email{
+        width: 100%;
+        line-height: 3rem;
+        border-radius: 5px;
+        border: 1px solid grey;
+        padding: 5px 10px;
+    }
+    .agree{
+        color: #666;
+        padding: 10px;
+        padding-bottom: 30px;
+        text-align: left;
+        font-size: 0.8rem;
+        margin:  auto;
+    }
+    .subscribe{
+        width: 103%;
+        margin: 0;
+    }
+    .subs-title h2{
+        font-size: 2rem;
+        text-align: center;
+        max-width: 600px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    
+    /* Footer Section */
+    #footer{
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+        color: white;
+    }
+    .footer-section{
+        width: 400px;
+        line-height: 1.5rem;
+        padding: 10px;
+    }
+    .footer-section h3{
+        font-size: 1.5rem;
+    }
+    .footer-section ul{
+        list-style: none;
+        padding-left: 15px;
+    }
+    .rect ul{
+        list-style: square;
+    }
+    .footer-frame{
+        position: relative;
+        bottom: -5px;
+    }
+    .light-hr{
+        background-color: white;
+    }
+    .copyright{
+        max-width: 1000px;
+        margin: auto;
+        text-align: center;
+        color: white;
+        padding: 20px;
+    }
+    .social{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+    }
+    .social div{
+        padding: 20px;
+        cursor: pointer;
+    }
+    .social i{
+        font-size: 3.5rem;
+    }
+    .social div:hover{
+        transform: scale(1.3);
+    }  }
   
 
