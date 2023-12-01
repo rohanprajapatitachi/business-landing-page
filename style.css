@@ -323,14 +323,24 @@ margin-bottom: 10px;
  .header{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    background-color: #5E3DEE;
+    background-color: #e6d813;
     margin-top: -1px;
     margin-bottom: -1px;
  }
 .menu-items{
     text-align: center;
-
+    position: absolute;
+    padding: 5rem;
+    top: 0.5rem;
+    left: 12rem;
+    list-style: none;
+    opacity: 0;
+    font-size: 2rem;
+    border: 4px solid black;
+    background-color: rgb(156, 23, 23);
+    border-radius: 0.25em;
+    transform: translateX(-10%);
+    transition: transform 100ms ease-in-out, opacity 200ms;
 }
 
 .menu-items li{
@@ -348,13 +358,10 @@ margin-bottom: 10px;
 }
 
 .check {
-    position: absolute;
-    top: 8rem;
-    left: 8rem;
-    height: 3rem;
-    width: 3rem;
-    opacity: 0;
-    z-index: 3;
+    background-color: #000000;
+    height: 2rem;
+    width: 2rem;
+    z-index: 222;
 }
 
 .check:hover {
@@ -371,14 +378,10 @@ margin-bottom: 10px;
     height: 3rem;
     width: 3rem;
     position: absolute;
-    top: 8rem;
-    left: 8rem;
-    padding: 0.5rem;
     z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: black;
     border-radius: 0.25em;
 }
 
