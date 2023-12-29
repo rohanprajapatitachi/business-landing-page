@@ -315,48 +315,121 @@ margin-bottom: 10px;
 
 /*  For Mobile responsive For Mobile responsive For Mobile responsive For Mobile responsive For Mobile responsive For Mobile responsive For Mobile responsive For Mobile responsive For Mobile responsive For Mobile responsive For Mobile responsive For Mobile responsive For Mobile responsive*/
 @media (max-width: 575.98px) {
-    #menu{
-        max-width: 1000px;
-        padding: 10px 10px;
-        margin: auto;
-        display:flex;
-        flex-direction: row;
-        justify-content:flex-start;
-        background-color: #5E3DEE;
-        font-family:"SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    }
-    div{
-        padding: 5px;
-       /* border: 1px solid grey;*/
-    }
-    .menu-item{
-        color:#ffffffcc;
-        font-weight:lighter;
-        padding: 10px 15px;
-    }
-    .menu-item:hover{
-        color:white;
-    }
-    .container{
-        background-color: #5E3DEE;
-        cursor: pointer;
-        margin-bottom: -1px;
-    }
-    .round-btn{
-        border-radius: 20px;
-        border: 2px solid white;
-        padding: 10px 40px;
-        margin: 0 10px;
-    }
-    .round-btn:hover{
-        background-color: white;
-        color: #5E3DEE;
-    }
+  
+ #menu{
+    display: none;
+ }
+
+ .header{
+    display: flex;
+    flex-direction: row;
+    background-color: #5E3DEE; 
+    margin-top: -1px;
+    margin-bottom: -1px;
+ }
+.menu-items{
+    text-align: center;
+    position: fixed;
+    padding: 5rem;
+    top: -1.5rem;
+    left: 13rem;
+    list-style: none;
+    opacity: 0;
+    font-size: 2rem;
+    border: 4px solid black;
+    background-color: rgb(229, 237, 249);
+    border-radius: 0.25em;
+    transform: translateX(-10%);
+    transition: transform 100ms ease-in-out, opacity 200ms;
+    z-index: 1;
+}
+
+.menu-items li{
+    color: white;
+    padding: 0.5rem;
+}
+
+.menu-items li a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-items li a:hover{
+    color: rgb(93, 87, 198);
+}
+
+.check {
+    background-color: #000000;
+    position: relative;
+    height: 3rem;
+    width: 3rem;
+    opacity: 0;
+    z-index: 3;
+}
+
+.check:hover {
+    cursor: pointer;
+}
+
+.check:checked~.menu-items {
+    display: block;
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.ham-menu {
+    height: 3rem;
+    width: 3rem;
+    position: fixed;
+    top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0.25em;
+    z-index: 2;
+}
+
+.ham-menu .line {
+    background-color: rgb(0, 0, 0);
+    border-radius: 1em;
+    width: 2.8rem;
+    height: 0.25rem;
+}
+
+.ham-menu .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 100ms ease-in-out;
+}
+
+.ham-menu .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 100ms ease-in-out;
+}
+
+.check:checked~.ham-menu .line1 {
+    display: block;
+    transform: rotate(45deg);
+}
+
+.check:checked~.ham-menu .line2 {
+    opacity: 0;
+}
+
+.check:checked~.ham-menu .line3 {
+    display: block;
+    transform: rotate(-45deg);
+}
+
+
+
+ 
     #logo{
         font-size: 1.5rem;
-        color: white;
+        color: rgb(255, 255, 255);
         font-weight: bold;
         margin-right: auto;
+        padding-top: 18px;
+        padding-left: 30px;
     }
     /*Home CSS*/
     #home{
@@ -369,7 +442,7 @@ margin-bottom: 10px;
         font-family:"SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
     .title-graphics img{
-        max-width: 300px;
+        max-width: 100%;
         border-radius: 4%;
     }
     .title{
@@ -637,47 +710,120 @@ margin-bottom: 10px;
   /* Small devices (landscape phones, 576px and up) */   /* Small devices (landscape phones, 576px and up) */   /* Small devices (landscape phones, 576px and up) */   /* Small devices (landscape phones, 576px and up) */
   @media (min-width: 576px) and (max-width: 767.98px) {
     #menu{
-        max-width: 1450px;
-        padding: 10px 10px;
-        margin: auto;
-        display:flex;
+        display: none;
+     }
+    
+     .header{
+        display: flex;
         flex-direction: row;
-        justify-content: flex-end;
-        background-color: #3dee9e;
-        font-family:"SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        background-color: #5E3DEE; 
+        margin-top: -1px;
+        margin-bottom: -1px;
+     }
+    .menu-items{
+        text-align: center;
+        position: fixed;
+        padding: 5rem;
+        top: -1.5rem;
+        left: 13rem;
+        list-style: none;
+        opacity: 0;
+        font-size: 2rem;
+        border: 4px solid black;
+        background-color: rgb(229, 237, 249);
+        border-radius: 0.25em;
+        transform: translateX(-10%);
+        transition: transform 100ms ease-in-out, opacity 200ms;
+        z-index: 1;
     }
-    div{
-        padding: 5px;
-       /* border: 1px solid grey;*/
+    
+    .menu-items li{
+        color: white;
+        padding: 0.5rem;
     }
-    .menu-item{
-        color:#ffffffcc;
-        font-weight:lighter;
-        padding: 10px 15px;
+    
+    .menu-items li a{
+        color: white;
+        text-decoration: none;
     }
-    .menu-item:hover{
-        color:white;
+    
+    .menu-items li a:hover{
+        color: rgb(93, 87, 198);
     }
-    .container{
-        background-color: #5E3DEE;
+    
+    .check {
+        background-color: #000000;
+        position: relative;
+        height: 3rem;
+        width: 3rem;
+        opacity: 0;
+        z-index: 3;
+    }
+    
+    .check:hover {
         cursor: pointer;
     }
-    .round-btn{
-        border-radius: 20px;
-        border: 2px solid white;
-        padding: 10px 40px;
-        margin: 0 10px;
+    
+    .check:checked~.menu-items {
+        display: block;
+        transform: translateX(0%);
+        opacity: 1;
     }
-    .round-btn:hover{
-        background-color: white;
-        color: #5E3DEE;
+    
+    .ham-menu {
+        height: 3rem;
+        width: 3rem;
+        position: fixed;
+        top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 0.25em;
+        z-index: 2;
     }
-    #logo{
-        font-size: 1.5rem;
-        color: white;
-        font-weight: bold;
-        margin-right: auto;
+    
+    .ham-menu .line {
+        background-color: rgb(0, 0, 0);
+        border-radius: 1em;
+        width: 2.8rem;
+        height: 0.25rem;
     }
+    
+    .ham-menu .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 100ms ease-in-out;
+    }
+    
+    .ham-menu .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 100ms ease-in-out;
+    }
+    
+    .check:checked~.ham-menu .line1 {
+        display: block;
+        transform: rotate(45deg);
+    }
+    
+    .check:checked~.ham-menu .line2 {
+        opacity: 0;
+    }
+    
+    .check:checked~.ham-menu .line3 {
+        display: block;
+        transform: rotate(-45deg);
+    }
+    
+    
+    
+     
+        #logo{
+            font-size: 1.5rem;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            margin-right: auto;
+            padding-top: 18px;
+            padding-left: 30px;
+        }
     /*Home CSS*/
     #home{
         display: flex;
@@ -688,7 +834,7 @@ margin-bottom: 10px;
         font-family:"SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
     .title-graphics img{
-        max-width: 400px;
+        max-width: 100%;
         border-radius: 4%;
     }
     .title{
@@ -764,6 +910,7 @@ margin-bottom: 10px;
     .price-cards{
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
     }
     .price-card{
         max-width: 80%;
@@ -951,6 +1098,9 @@ margin-bottom: 10px;
   
   /* Medium devices (tablets, 768px and up) Medium devices (tablets, 768px and up) Medium devices (tablets, 768px and up) Medium devices (tablets, 768px and up). Medium devices (tablets, 768px and up). Medium devices (tablets, 768px and up). Medium devices (tablets, 768px and up). Medium devices (tablets, 768px and up). Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) and (max-width: 991.98px) {
+    .header{
+        display: none;
+    }
     #menu{
         max-width: 1450px;
         padding: 10px 10px;
@@ -958,7 +1108,7 @@ margin-bottom: 10px;
         display:flex;
         flex-direction: row;
         justify-content: flex-end;
-        background-color: #ee603d;
+        background-color: #5E3DEE;
         font-family:"SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
     div{
@@ -1003,7 +1153,7 @@ margin-bottom: 10px;
         font-family:"SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
     .title-graphics img{
-        max-width: 700px;
+        max-width: 100%;
         border-radius: 4%;
     }
     .title{
@@ -1079,11 +1229,11 @@ margin-bottom: 10px;
     .price-cards{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     .price-card{
         max-width: 30%;
-        padding: 40px;
+        padding: 10px;
         border: 1px solid #ccc;
         border-radius: 19px;
     }
@@ -1261,8 +1411,11 @@ margin-bottom: 10px;
         transform: scale(1.3);
     }  }
   
-  /* Large devices (desktops, 992px and up) */
+  /* Large devices (desktops, 992px and up) Large devices (desktops, 992px and up)  Large devices (desktops, 992px and up)  Large devices (desktops, 992px and up)  Large devices (desktops, 992px and up)  Large devices (desktops, 992px and up)  Large devices (desktops, 992px and up)  Large devices (desktops, 992px and up)  Large devices (desktops, 992px and up)  Large devices (desktops, 992px and up) */
   @media (min-width: 992px) and (max-width: 1199.98px) {
+    .header{
+        display: none;
+    }
     #menu{
         max-width: 1450px;
         padding: 10px 10px;
@@ -1576,6 +1729,9 @@ margin-bottom: 10px;
   
   /* Extra Large devices (large desktops, 1200px and up) Extra Large devices (large desktops, 1200px and up) Extra Large devices (large desktops, 1200px and up) Extra Large devices (large desktops, 1200px and up) Extra Large devices (large desktops, 1200px and up) Extra Large devices (large desktops, 1200px and up) Extra Large devices (large desktops, 1200px and up) Extra Large devices (large desktops, 1200px and up) Extra Large devices (large desktops, 1200px and up)*/
   @media (min-width: 1200px) {
+    .header{
+        display: none;
+    }
     #menu{
         max-width: 1450px;
         padding: 10px 10px;
